@@ -11,16 +11,16 @@ const Navbar = (props) => {
         <Sidebar isDark={darkMode} />
       ) : (
         <div className="ml-auto pl-10">
-          <a className="xs:text-xs xs:px-4 text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:text-white dark:hover:bg-gray-700">
+          <a className="text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:text-white dark:hover:bg-gray-700">
             Home
           </a>
-          <a className="xs:text-xs xs:px-4 text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:text-white dark:hover:bg-gray-700">
+          <a className="text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:text-white dark:hover:bg-gray-700">
             About
           </a>
-          <a className="xs:text-xs xs:px-4 text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:text-white dark:hover:bg-gray-700">
+          <a className="text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:text-white dark:hover:bg-gray-700">
             Projects
           </a>
-          <a className="xs:text-xs xs:px-4 text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:text-white dark:hover:bg-gray-700">
+          <a className="text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:text-white dark:hover:bg-gray-700">
             Achievements
           </a>
         </div>

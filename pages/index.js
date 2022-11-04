@@ -19,7 +19,7 @@ const Home = () => {
   });
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div className={darkMode ? "dark " : ""}>
       <Head>
         <title>Miftahul Anwar</title>
         <meta name="description" content="Miftahul Anwar's personal site" />
@@ -34,7 +34,7 @@ const Home = () => {
             path="home"
           />
           <div className="relative rounded-full mx-auto w-48 h-48 overflow-auto my-20">
-            <Image src={profile} width={1000} />
+            <Image src={profile} alt="Miftahul Anwar" placeholder="blur" />
           </div>
           <div className="text-center">
             <h1 className="text-3xl font-burtons dark:text-white">

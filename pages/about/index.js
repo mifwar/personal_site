@@ -31,6 +31,7 @@ const About = () => {
             isMobile={isMobile}
             darkMode={darkMode}
             changeDarkMode={setDarkMode}
+            path="about"
           />
           <div className="flex justify-center items-center h-screen -my-16 dark:text-white">
             About Page

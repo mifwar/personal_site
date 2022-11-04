@@ -70,6 +70,18 @@ a {
     border-radius: 4px;
   }
 
+  .nav-text.active {
+    color: #2563eb;
+  }
+
+  .nav-text.dark {
+    color: #ffffff;
+  }
+
+  .nav-text.dark-active {
+    color: #60a5fa;
+  }
+
   .overlay {
     z-index: 1;
     position: fixed;

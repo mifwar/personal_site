@@ -5,34 +5,50 @@ import Link from "next/link";
 import Sidebar from "./Sidebar";
 
 const Navbar = (props) => {
-  const { isMobile, darkMode, changeDarkMode } = props;
+  const { isMobile, darkMode, changeDarkMode, path } = props;
   return (
     <nav className="flex items-center max-w-3xl mx-auto">
       {isMobile ? (
-        <Sidebar isDark={darkMode} />
+        <Sidebar isDark={darkMode} path={path} />
       ) : (
         <div className="xs:hidden ml-auto pl-10">
           <Link
             href="/"
-            className="text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:text-white dark:hover:bg-gray-700"
+            className={`${
+              path === "home"
+                ? "dark:text-blue-400 text-blue-600"
+                : "dark:text-white text-black"
+            } "text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:hover:bg-gray-700"`}
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:text-white dark:hover:bg-gray-700"
+            className={`${
+              path === "about"
+                ? "dark:text-blue-400 text-blue-600"
+                : "dark:text-white text-black"
+            } "text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:hover:bg-gray-700"`}
           >
             About
           </Link>
           <Link
             href="/projects"
-            className="text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:text-white dark:hover:bg-gray-700"
+            className={`${
+              path === "projects"
+                ? "dark:text-blue-400 text-blue-600"
+                : "dark:text-white text-black"
+            } "text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:hover:bg-gray-700"`}
           >
             Projects
           </Link>
           <Link
             href="/achievements"
-            className="text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:text-white dark:hover:bg-gray-700"
+            className={`${
+              path === "achievements"
+                ? "dark:text-blue-400 text-blue-600"
+                : "dark:text-white text-black"
+            } "text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:hover:bg-gray-700"`}
           >
             Achievements
           </Link>

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Sidebar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-  const { isDark } = props;
+  const { isDark, path } = props;
 
   const changeSidebarStatus = () => {
     setIsOpen(!isOpen);
@@ -40,22 +40,66 @@ const Sidebar = (props) => {
           </div>
           <ul className="nav-menu-items">
             <li>
-              <Link href="/" className="nav-text dark:text-white">
+              <Link
+                href="/"
+                className={
+                  path === "home"
+                    ? isDark
+                      ? "nav-text dark-active"
+                      : "nav-text active"
+                    : isDark
+                    ? "nav-text dark"
+                    : "nav-text"
+                }
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/about" className="nav-text dark:text-white">
+              <Link
+                href="/about"
+                className={
+                  path === "about"
+                    ? isDark
+                      ? "nav-text dark-active"
+                      : "nav-text active"
+                    : isDark
+                    ? "nav-text dark"
+                    : "nav-text"
+                }
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link href="/projects" className="nav-text dark:text-white">
+              <Link
+                href="/projects"
+                className={
+                  path === "projects"
+                    ? isDark
+                      ? "nav-text dark-active"
+                      : "nav-text active"
+                    : isDark
+                    ? "nav-text dark"
+                    : "nav-text"
+                }
+              >
                 Projects
               </Link>
             </li>
             <li>
-              <Link href="/achievements" className="nav-text dark:text-white">
+              <Link
+                href="/achievements"
+                className={
+                  path === "achievements"
+                    ? isDark
+                      ? "nav-text dark-active"
+                      : "nav-text active"
+                    : isDark
+                    ? "nav-text dark"
+                    : "nav-text"
+                }
+              >
                 Achievements
               </Link>
             </li>

@@ -31,6 +31,7 @@ const Home = () => {
             isMobile={isMobile}
             darkMode={darkMode}
             changeDarkMode={setDarkMode}
+            path="home"
           />
           <div className="relative rounded-full mx-auto w-48 h-48 overflow-auto my-20">
             <Image src={profile} width={1000} />

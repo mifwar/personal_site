@@ -9,11 +9,6 @@ import Navbar from "../../components/Navbar";
 
 const About = () => {
   const [darkMode, setDarkMode] = useThemeContext();
-
-  function changeDarkMode(status) {
-    setDarkMode(status);
-  }
-
   const [isMobile, setIsMobile] = useState();
 
   useEffect(() => {
@@ -35,7 +30,7 @@ const About = () => {
           <Navbar
             isMobile={isMobile}
             darkMode={darkMode}
-            changeDarkMode={changeDarkMode}
+            changeDarkMode={setDarkMode}
           />
           <div className="flex justify-center items-center h-screen -my-16 dark:text-white">
             Projects Page

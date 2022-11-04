@@ -11,10 +11,6 @@ const About = () => {
   const [darkMode, setDarkMode] = useThemeContext();
   const [isMobile, setIsMobile] = useState();
 
-  function changeDarkMode(status) {
-    setDarkMode(status);
-  }
-
   useEffect(() => {
     const resizeW = () => setIsMobile(window.innerWidth <= 640);
     resizeW();
@@ -34,7 +30,7 @@ const About = () => {
           <Navbar
             isMobile={isMobile}
             darkMode={darkMode}
-            changeDarkMode={changeDarkMode}
+            changeDarkMode={setDarkMode}
           />
           <div className="flex justify-center items-center h-screen -my-16 dark:text-white">
             Achievements Page

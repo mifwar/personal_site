@@ -11,10 +11,6 @@ const Home = () => {
   const [darkMode, setDarkMode] = useThemeContext();
   const [isMobile, setIsMobile] = useState();
 
-  const changeDarkMode = (status) => {
-    setDarkMode(status);
-  };
-
   useEffect(() => {
     const resizeW = () => setIsMobile(window.innerWidth <= 640);
     resizeW();
@@ -34,7 +30,7 @@ const Home = () => {
           <Navbar
             isMobile={isMobile}
             darkMode={darkMode}
-            changeDarkMode={changeDarkMode}
+            changeDarkMode={setDarkMode}
           />
           <div className="relative rounded-full mx-auto w-48 h-48 overflow-auto my-20">
             <Image src={profile} width={1000} />

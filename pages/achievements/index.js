@@ -4,16 +4,16 @@ import profile from "../../public/MiftahulAnwarCropped.jpg";
 import React, { useState, useEffect } from "react";
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import { useThemeContext } from "../../utils/darkMode";
 import Navbar from "../../components/Navbar";
 
 const About = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useThemeContext();
+  const [isMobile, setIsMobile] = useState();
 
   function changeDarkMode(status) {
     setDarkMode(status);
   }
-
-  const [isMobile, setIsMobile] = useState();
 
   useEffect(() => {
     const resizeW = () => setIsMobile(window.innerWidth <= 640);

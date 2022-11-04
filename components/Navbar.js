@@ -14,41 +14,57 @@ const Navbar = (props) => {
         <div className="xs:hidden ml-auto pl-10">
           <Link
             href="/"
-            className={`${
+            className={
               path === "home"
-                ? "dark:text-blue-400 text-blue-600"
-                : "dark:text-white text-black"
-            } "text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:hover:bg-gray-700"`}
+                ? darkMode
+                  ? "nav-menu-big dark-active"
+                  : "nav-menu-big active"
+                : darkMode
+                ? "nav-menu-big dark"
+                : "nav-menu-big"
+            }
           >
             Home
           </Link>
           <Link
             href="/about"
-            className={`${
+            className={
               path === "about"
-                ? "dark:text-blue-400 text-blue-600"
-                : "dark:text-white text-black"
-            } "text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:hover:bg-gray-700"`}
+                ? darkMode
+                  ? "nav-menu-big dark-active"
+                  : "nav-menu-big active"
+                : darkMode
+                ? "nav-menu-big dark"
+                : "nav-menu-big"
+            }
           >
             About
           </Link>
           <Link
             href="/projects"
-            className={`${
+            className={
               path === "projects"
-                ? "dark:text-blue-400 text-blue-600"
-                : "dark:text-white text-black"
-            } "text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:hover:bg-gray-700"`}
+                ? darkMode
+                  ? "nav-menu-big dark-active"
+                  : "nav-menu-big active"
+                : darkMode
+                ? "nav-menu-big dark"
+                : "nav-menu-big"
+            }
           >
             Projects
           </Link>
           <Link
             href="/achievements"
-            className={`${
+            className={
               path === "achievements"
-                ? "dark:text-blue-400 text-blue-600"
-                : "dark:text-white text-black"
-            } "text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:hover:bg-gray-700"`}
+                ? darkMode
+                  ? "nav-menu-big dark-active"
+                  : "nav-menu-big active"
+                : darkMode
+                ? "nav-menu-big dark"
+                : "nav-menu-big"
+            }
           >
             Achievements
           </Link>

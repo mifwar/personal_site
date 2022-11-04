@@ -7,11 +7,11 @@ import Sidebar from "./Sidebar";
 const Navbar = (props) => {
   const { isMobile, darkMode, changeDarkMode } = props;
   return (
-    <nav className="flex items-center max-w-3xl mx-auto xs:overflow-y-auto">
+    <nav className="flex items-center max-w-3xl mx-auto">
       {isMobile ? (
         <Sidebar isDark={darkMode} />
       ) : (
-        <div className="ml-auto pl-10">
+        <div className="xs:hidden ml-auto pl-10">
           <Link
             href="/"
             className="text-sm rounded-md py-2 px-7 hover:bg-gray-200 ease-in duration-150 dark:text-white dark:hover:bg-gray-700"

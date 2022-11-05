@@ -18,6 +18,22 @@ const About = () => {
     return () => window.removeEventListener("resize", resizeW);
   });
 
+  useEffect(() => {
+    {
+      darkMode
+        ? document.body.classList.add("bg-gray-900")
+        : document.body.classList.add("bg-white");
+    }
+
+    return () => {
+      {
+        darkMode
+          ? document.body.classList.remove("bg-gray-900")
+          : document.body.classList.remove("bg-white");
+      }
+    };
+  });
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>

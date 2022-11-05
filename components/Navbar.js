@@ -1,5 +1,4 @@
 import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
-import { slide as Menu } from "react-burger-menu";
 import Link from "next/link";
 
 import Sidebar from "./Sidebar";

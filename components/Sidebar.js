@@ -16,7 +16,7 @@ const Sidebar = (props) => {
     <>
       <div className="navbar">
         <FaBars
-          className="menu-bars dark:text-white"
+          className="menu-bars dark:text-white hover:cursor-pointer"
           onClick={changeSidebarStatus}
         />
       </div>
@@ -34,7 +34,7 @@ const Sidebar = (props) => {
         >
           <div className="text-xl -pl-3 py-1 my-5 ">
             <AiOutlineClose
-              className="menu-bars dark:text-white"
+              className="menu-bars dark:text-white hover:cursor-pointer"
               onClick={changeSidebarStatus}
             />
           </div>

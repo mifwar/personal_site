@@ -40,6 +40,10 @@ const Home = () => {
         <title>Miftahul Anwar</title>
         <meta name="description" content="Miftahul Anwar's personal site" />
         <link rel="icon" href="/favicon.ico" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <main className="bg-white dark:bg-gray-900">
         <section className="min-h-screen">
@@ -53,7 +57,7 @@ const Home = () => {
             <Image src={profile} alt="Miftahul Anwar" placeholder="blur" />
           </div>
           <div className="text-center">
-            <h1 className="text-3xl font-burtons dark:text-white">
+            <h1 className="text-3xl font-burtons dark:text-white font-Lato">
               Hi, I am Miftahul Anwar
             </h1>
           </div>

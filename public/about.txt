@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Noto Sans Zanabazar Square
+- Font Author: Copyright 2020 Google Inc. All Rights Reserved.
+- Font Source: http://fonts.gstatic.com/s/notosanszanabazarsquare/v15/Cn-jJsuGWQxOjaGwMQ6fOicyxLBEMRfDtkzl4uagQtJxOCEgN0Gc.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

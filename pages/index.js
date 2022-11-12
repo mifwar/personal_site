@@ -70,6 +70,7 @@ const Home = () => {
                 className="text-green-600 dark:text-green-400"
                 href="https://clojure.org/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Clojure
               </a>{" "}
@@ -78,6 +79,7 @@ const Home = () => {
                 className="text-purple-600 dark:text-purple-400"
                 href="https://zenius.net"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Zenius
               </a>

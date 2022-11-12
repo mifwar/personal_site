@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       Lato: ["Lato", "sans-serif"],
+      Poppins: ["Poppins", "sans-serif"],
     },
     extend: {
       screens: { xs: { max: "640px" } },

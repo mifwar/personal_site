@@ -69,19 +69,16 @@ const Navbar = (props) => {
           </Link>
         </div>
       )}
-      <div className="text-sm px-2 py-2 ml-auto mr-10 my-5 rounded-md hover:bg-gray-200 ease-in duration-150 dark:hover:bg-gray-700">
+      <button className="text-sm px-2 py-2 ml-auto mr-10 my-5 rounded-md hover:bg-gray-200 ease-in duration-150 dark:hover:bg-gray-700">
         {darkMode ? (
           <BsSunFill
-            className="text-white hover:cursor-pointer"
+            className="text-white"
             onClick={() => changeDarkMode(!darkMode)}
           />
         ) : (
-          <BsFillMoonFill
-            className="hover:cursor-pointer"
-            onClick={() => changeDarkMode(!darkMode)}
-          />
+          <BsFillMoonFill onClick={() => changeDarkMode(!darkMode)} />
         )}
-      </div>
+      </button>
     </nav>
   );
 };

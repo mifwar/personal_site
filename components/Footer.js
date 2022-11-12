@@ -11,6 +11,7 @@ const Footer = () => {
                 dark:hover:text-blue-300"
           href="https://vercel.com/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Vercel
         </a>{" "}
@@ -23,6 +24,7 @@ const Footer = () => {
                 dark:hover:text-blue-300"
           href="https://nextjs.org/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Next.js
         </a>{" "}
@@ -35,6 +37,7 @@ const Footer = () => {
                 dark:hover:text-blue-300"
           href="https://tailwindcss.com/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Tailwind CSS
         </a>

@@ -62,7 +62,7 @@ const Home = () => {
               Hi, I am Miftahul Anwar
             </h1>
             <h2 className="text-md font-burtons dark:text-white font-Poppins py-1">
-              I am a software engineer based in Jakarta, Indonesia.
+              I am a software engineer based in Jakarta, ID.
             </h2>
             <h2 className="text-md font-burtons dark:text-white font-Poppins py-1">
               Currently working as a{" "}
@@ -74,7 +74,7 @@ const Home = () => {
               >
                 Clojure
               </a>{" "}
-              Developer at{" "}
+              Dev at{" "}
               <a
                 className="text-purple-600 dark:text-purple-400"
                 href="https://zenius.net"

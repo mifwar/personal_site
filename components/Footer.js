@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <>
       <h4 className="text-xs text-black dark:text-white font-Poppins mt-7 py-1">
-        This site is hosted in{" "}
+        Hosted in{" "}
         <a
           className="
                 text-blue-600

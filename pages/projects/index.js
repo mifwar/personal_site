@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
-import profile from "../../public/MiftahulAnwarCropped.jpg";
 import React, { useState, useEffect } from "react";
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Social from "../../components/Social";
+import Footer from "../../components/Footer";
 
 import { useThemeContext } from "../../utils/darkMode";
 import Navbar from "../../components/Navbar";
@@ -52,6 +52,8 @@ const About = () => {
           <div className="flex justify-center items-center h-screen -my-16 dark:text-white">
             Projects Page
           </div>
+          <Social />
+          <Footer />
         </section>
       </main>
     </div>

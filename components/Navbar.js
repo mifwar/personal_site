@@ -12,7 +12,7 @@ const Navbar = (props) => {
     { id: 4, href: "/achievements", path: "achievements", txt: "Achievements" },
   ];
   return (
-    <nav className="flex items-center max-w-3xl mx-auto">
+    <nav className="z-10 flex items-center max-w-4xl mx-auto -top-1 sticky backdrop-blur-sm bg-white/80 dark:bg-gray-900/80">
       {isMobile ? (
         <Sidebar isDark={darkMode} path={path} />
       ) : (

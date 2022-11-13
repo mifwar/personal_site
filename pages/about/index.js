@@ -50,7 +50,7 @@ const About = () => {
             path="about"
           />
           <div className="flex justify-center items-start xs:items-center dark:text-white my-10 xs:flex-col-reverse">
-            <div className="mx-10 max-w-lg text-justify font-Poppins text-sm">
+            <div className="ml-10 mr-5 max-w-lg text-justify font-Poppins text-sm">
               <p className="my-3">
                 Hello! My name is Miftahul Anwar and you can call me Miftah.
               </p>
@@ -100,7 +100,7 @@ const About = () => {
               </p>
             </div>
             <Image
-              className="rounded-lg m-5  w-56 xs:w-48"
+              className="rounded-lg ml-5 mr-10  w-56 xs:w-48"
               src={about}
               alt="Miftahul Anwar"
               placeholder="blur"

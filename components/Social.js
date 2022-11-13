@@ -19,7 +19,7 @@ const Social = () => {
     { i: 6, h: "https://instagram.com/mif.war", c: <FaInstagram /> },
   ];
   return (
-    <div className="text-lg flex justify-center mx-auto mt-20">
+    <div className="text-lg flex justify-center mx-auto mt-10">
       {socials.map((social) => (
         <a
           key={social.i}

@@ -32,6 +32,9 @@ const Navbar = (props) => {
               key={link.id}
               to={link.href}
               offset={-90}
+              smooth={false}
+              duration={25}
+              isDynamic={true}
               onClick={() => {
                 setPath(link.path);
                 for (let i = 0; i < links.length; i++) {

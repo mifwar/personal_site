@@ -4,6 +4,10 @@ import Link from "next/link";
 import Sidebar from "./Sidebar";
 
 const Navbar = (props) => {
+  const navStyle =
+    "z-10 flex items-center max-w-4xl mx-auto -top-1 sticky bg-white/90 dark:bg-gray-900/90";
+  const navStyleBlur =
+    "z-10 flex items-center max-w-4xl mx-auto -top-1 sticky backdrop-blur-sm bg-white/90 dark:bg-gray-900/90";
   const { isMobile, darkMode, changeDarkMode, path } = props;
   const links = [
     { id: 1, href: "/", path: "home", txt: "Home" },
@@ -12,7 +16,7 @@ const Navbar = (props) => {
     { id: 4, href: "/achievements", path: "achievements", txt: "Achievements" },
   ];
   return (
-    <nav className="z-10 flex items-center max-w-4xl mx-auto -top-1 sticky backdrop-blur-sm bg-white/80 dark:bg-gray-900/80">
+    <nav className={isMobile ? navStyle : navStyleBlur}>
       {isMobile ? (
         <Sidebar isDark={darkMode} path={path} />
       ) : (

@@ -4,7 +4,7 @@ import { useThemeContext } from "../utils/darkMode";
 
 export default function Document() {
   return (
-    <Html>
+    <Html className="scroll-smooth">
       <Head>
         <meta name="description" content="Miftahul Anwar's personal site" />
         <link rel="icon" href="/favicon.ico" />

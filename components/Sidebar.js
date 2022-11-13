@@ -56,9 +56,6 @@ const Sidebar = (props) => {
                   activeClass="active"
                   to={link.href}
                   offset={-90}
-                  smooth={false}
-                  duration={25}
-                  isDynamic={true}
                   onClick={() => {
                     changeSidebarStatus();
                     setPath(link.path);

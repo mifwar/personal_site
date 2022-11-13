@@ -65,10 +65,10 @@ const About = () => {
           />
           <div className="flex justify-center items-start xs:items-center dark:text-white my-10 xs:flex-col-reverse">
             <div className="ml-10 mr-5 max-w-lg text-justify font-Poppins text-sm">
-              <p className="mb-3">
+              <p className="mb-3 xs:mr-10">
                 Hello! My name is Miftahul Anwar and you can call me Miftah.
               </p>
-              <p className="my-3">
+              <p className="my-3 xs:mr-10">
                 My programming journey is started when i became a Computer
                 Engineering student at
                 {customLink(
@@ -77,7 +77,7 @@ const About = () => {
                 )}
                 .
               </p>
-              <p className="my-3">
+              <p className="my-3 xs:mr-10">
                 During my college life, i spent my first 3 years in
                 {customLink("https://erosrobotic.id/", " EROS ")} as a
                 programmer. EROS is a Humanoid Robot Soccer Team under the
@@ -94,19 +94,19 @@ const About = () => {
                 )}
                 .
               </p>
-              <p className="my-3">
+              <p className="my-3 xs:mr-10">
                 While at EROS, i created and involved in some projects. My first
                 project is creating an app that able to wirelessly track the
                 robot states while robot in the field. I also involved to
                 develop a decision making algorithm, an object detection system
                 using computer vision, and a teamwork algorithm.
               </p>
-              <p className="my-3">
+              <p className="my-3 xs:mr-10">
                 In my last year at college, i became a freelance software
                 engineer and handled some projects that mostly about Desktop
                 App, Computer Vision, and IoT.
               </p>
-              <p className="my-3">
+              <p className="my-3 xs:mr-10">
                 Fast forward to today, I am currently working for
                 {customLink("https://www.zenius.net/", " Zenius Education ")}
                 as a Clojure Developer. I created a Clojure app to speed up the
@@ -114,7 +114,7 @@ const About = () => {
               </p>
             </div>
             <Image
-              className="rounded-lg ml-5 mr-10  w-56 xs:w-48"
+              className="rounded-lg ml-5 mr-10 mb-10 w-56 xs:w-48"
               src={about}
               alt="Miftahul Anwar"
               placeholder="blur"

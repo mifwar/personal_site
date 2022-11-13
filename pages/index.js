@@ -39,12 +39,6 @@ const Home = () => {
     <div className={darkMode ? "dark " : ""}>
       <Head>
         <title>Miftahul Anwar</title>
-        <meta name="description" content="Miftahul Anwar's personal site" />
-        <link rel="icon" href="/favicon.ico" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@300&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <main className="bg-white dark:bg-gray-900">
         <section className="min-h-screen">
@@ -84,9 +78,9 @@ const Home = () => {
                 Zenius
               </a>
             </h2>
-            <Social />
-            <Footer />
           </div>
+          <Social />
+          <Footer />
         </section>
       </main>
     </div>

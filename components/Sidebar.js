@@ -22,20 +22,12 @@ const Sidebar = (props) => {
     { id: 4, href: "achievements", path: "b_achievements", tx: "Achievements" },
   ];
 
-  const navStyle =
-    "z-10 flex items-center max-w-4xl mx-auto -top-1 sticky bg-white/80 dark:bg-gray-900/80";
-  const navStyleBlur =
-    "z-10 flex items-center max-w-4xl mx-auto -top-1 sticky backdrop-blur-sm bg-white/80 dark:bg-gray-900/80";
-
   return (
     <>
       <div className="navbar">
         <FaBars
           className="menu-bars dark:text-white hover:cursor-pointer"
-          onClick={() => {
-            document.getElementById("nav").className = navStyle;
-            changeSidebarStatus();
-          }}
+          onClick={changeSidebarStatus}
         />
       </div>
       <div>
@@ -53,10 +45,7 @@ const Sidebar = (props) => {
           <div className="text-xl -pl-3 py-1 my-5 ">
             <AiOutlineClose
               className="menu-bars dark:text-white hover:cursor-pointer"
-              onClick={() => {
-                document.getElementById("nav").className = navStyleBlur;
-                changeSidebarStatus();
-              }}
+              onClick={changeSidebarStatus}
             />
           </div>
           <ul className="nav-menu-items">

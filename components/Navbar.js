@@ -11,6 +11,8 @@ const Navbar = (props) => {
   const [path, setPath] = useState("b_home");
 
   const navStyle =
+    "z-10 flex items-center max-w-4xl mx-auto -top-1 sticky bg-white/80 dark:bg-gray-900/80";
+  const navStyleBlur =
     "z-10 flex items-center max-w-4xl mx-auto -top-1 sticky backdrop-blur-sm bg-white/80 dark:bg-gray-900/80";
   const { isMobile, darkMode, changeDarkMode } = props;
   const links = [
@@ -20,7 +22,7 @@ const Navbar = (props) => {
     { id: 4, href: "achievements", path: "b_achievements", tx: "Achievements" },
   ];
   return (
-    <nav id="nav" className={navStyle}>
+    <nav className={isMobile ? navStyle : navStyleBlur}>
       {isMobile ? (
         <Sidebar isDark={darkMode} path={path} />
       ) : (

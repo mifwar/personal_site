@@ -1,4 +1,4 @@
-import { customLink } from "../utils/utils";
+import customLink from "../utils/utils";
 
 const Footer = () => {
   return (

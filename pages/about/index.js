@@ -7,7 +7,7 @@ import { useThemeContext } from "../../utils/darkMode";
 import Navbar from "../../components/Navbar";
 import Social from "../../components/Social";
 import Footer from "../../components/Footer";
-import { customLink } from "../../utils/utils";
+import customLink from "../../utils/utils";
 
 const About = () => {
   const [darkMode, setDarkMode] = useThemeContext();

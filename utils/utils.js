@@ -1,4 +1,4 @@
-export const customLink = (href, text) => (
+const customLink = (href, text) => (
   <a
     className="
           text-blue-600
@@ -12,3 +12,5 @@ export const customLink = (href, text) => (
     {text}
   </a>
 );
+
+export default customLink;

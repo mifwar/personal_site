@@ -24,7 +24,7 @@ const About = () => {
       </p>
       <div className="flex justify-center items-start xs:items-center dark:text-white my-10 xs:flex-col-reverse">
         <div className="ml-10 mr-5 max-w-lg text-justify font-Poppins text-sm">
-          <p className="mb-3">
+          <p className="my-3 xs:mr-10">
             Hello! My name is Miftahul Anwar and you can call me Miftah.
           </p>
           <p className="my-3 xs:mr-10">

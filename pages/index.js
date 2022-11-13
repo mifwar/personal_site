@@ -4,9 +4,6 @@ import profile from "../public/MiftahulAnwarCropped.jpg";
 import React, { useState, useContext, useEffect } from "react";
 
 import { useThemeContext } from "../utils/darkMode";
-import About from "./About";
-import Projects from "./Projects";
-import Achievements from "./Achievements";
 import Navbar from "../components/Navbar";
 import Social from "../components/Social";
 import Footer from "../components/Footer";
@@ -44,24 +41,24 @@ const Home = () => {
         <title>Miftahul Anwar</title>
       </Head>
       <main className="bg-white dark:bg-gray-900">
-        <Navbar
-          isMobile={isMobile}
-          darkMode={darkMode}
-          changeDarkMode={setDarkMode}
-          path="home"
-        />
-        <section className="py-16 min-h-screen" id="home">
-          <div className="relative rounded-full mx-auto w-52 h-52 overflow-auto mb-10">
+        <section className="min-h-screen">
+          <Navbar
+            isMobile={isMobile}
+            darkMode={darkMode}
+            changeDarkMode={setDarkMode}
+            path="home"
+          />
+          <div className="relative rounded-full mx-auto w-48 h-48 overflow-auto mt-14 mb-10">
             <Image src={profile} alt="Miftahul Anwar" placeholder="blur" />
           </div>
           <div className="text-center">
-            <h1 className="text-5xl font-burtons dark:text-white font-Lato py-5">
+            <h1 className="text-3xl font-burtons dark:text-white font-Lato py-5">
               Hi, I am Miftahul Anwar
             </h1>
-            <h2 className="text-xl font-burtons dark:text-white font-Poppins py-1">
+            <h2 className="text-md font-burtons dark:text-white font-Poppins py-1">
               I am a software engineer based in Jakarta, ID.
             </h2>
-            <h2 className="text-xl font-burtons dark:text-white font-Poppins py-1">
+            <h2 className="text-md font-burtons dark:text-white font-Poppins py-1">
               Currently working as a{" "}
               <a
                 className="text-green-600 dark:text-green-400"
@@ -81,31 +78,10 @@ const Home = () => {
                 Zenius
               </a>
             </h2>
-            <button
-              className="
-              m-7 px-4 py-2
-              fill-none
-              font-Lato
-              border
-              text-blue-600
-              border-blue-600
-              hover:text-white
-              hover:bg-blue-600
-              dark:border-blue-400
-              dark:text-blue-400
-             dark:hover:bg-blue-400
-             dark:hover:text-black
-             rounded-md hover"
-            >
-              See my resume
-            </button>
           </div>
+          <Social />
+          <Footer />
         </section>
-        <About />
-        <Projects />
-        <Achievements />
-        <Social />
-        <Footer />
       </main>
     </div>
   );

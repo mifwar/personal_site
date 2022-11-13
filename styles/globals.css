@@ -21,6 +21,7 @@ a {
 
 @layer utilities {
   .nav-menu-big {
+    cursor: pointer;
     color: #00000;
     border-radius: 0.5rem;
     font-size: 1rem; /* 14px */
@@ -88,6 +89,7 @@ a {
   }
 
   .nav-text {
+    cursor: pointer;
     font-family: Poppins;
     display: flex;
     justify-content: flex-start;
@@ -119,6 +121,22 @@ a {
 
   .nav-text.dark-active {
     color: #60a5fa;
+  }
+
+  .nav-text:hover {
+    background-color: #eeeeee;
+  }
+
+  .nav-text.active:hover {
+    background-color: #eeeeee;
+  }
+
+  .nav-text.dark-active:hover {
+    background-color: #1f2937;
+  }
+
+  .nav-text.dark:hover {
+    background-color: #1f2937;
   }
 
   .overlay {

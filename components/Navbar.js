@@ -1,25 +1,19 @@
-import React, { useState } from "react";
-
 import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
-import { Link, animateScroll as scroll } from "react-scroll";
-
-// import Link from "next/link";
+import Link from "next/link";
 
 import Sidebar from "./Sidebar";
 
 const Navbar = (props) => {
-  const [path, setPath] = useState("b_home");
-
   const navStyle =
-    "z-10 flex items-center max-w-4xl mx-auto -top-1 sticky bg-white/80 dark:bg-gray-900/80";
+    "z-10 flex items-center max-w-4xl mx-auto -top-1 sticky bg-white/90 dark:bg-gray-900/90";
   const navStyleBlur =
-    "z-10 flex items-center max-w-4xl mx-auto -top-1 sticky backdrop-blur-sm bg-white/80 dark:bg-gray-900/80";
-  const { isMobile, darkMode, changeDarkMode } = props;
+    "z-10 flex items-center max-w-4xl mx-auto -top-1 sticky backdrop-blur-sm bg-white/90 dark:bg-gray-900/90";
+  const { isMobile, darkMode, changeDarkMode, path } = props;
   const links = [
-    { id: 1, href: "home", path: "b_home", tx: "Home" },
-    { id: 2, href: "about", path: "b_about", tx: "About" },
-    { id: 3, href: "projects", path: "b_projects", tx: "Projects" },
-    { id: 4, href: "achievements", path: "b_achievements", tx: "Achievements" },
+    { id: 1, href: "/", path: "home", txt: "Home" },
+    { id: 2, href: "/about", path: "about", txt: "About" },
+    { id: 3, href: "/projects", path: "projects", txt: "Projects" },
+    { id: 4, href: "/achievements", path: "achievements", txt: "Achievements" },
   ];
   return (
     <nav className={isMobile ? navStyle : navStyleBlur}>
@@ -29,25 +23,8 @@ const Navbar = (props) => {
         <div className="xs:hidden ml-auto pl-10">
           {links.map((link) => (
             <Link
-              id={link.path}
-              activeClass="active"
               key={link.id}
-              to={link.href}
-              offset={-90}
-              smooth={false}
-              duration={25}
-              isDynamic={true}
-              onClick={() => {
-                setPath(link.path);
-                for (let i = 0; i < links.length; i++) {
-                  document.getElementById(links[i].path).className = darkMode
-                    ? "nav-menu-big dark"
-                    : "nav-menu-big";
-                }
-                document.getElementById(link.path).className = darkMode
-                  ? "nav-menu-big dark-active"
-                  : "nav-menu-big active";
-              }}
+              href={link.href}
               className={
                 path === link.path
                   ? darkMode
@@ -58,7 +35,7 @@ const Navbar = (props) => {
                   : "nav-menu-big"
               }
             >
-              {link.tx}
+              {link.txt}
             </Link>
           ))}
         </div>
@@ -67,18 +44,10 @@ const Navbar = (props) => {
         {darkMode ? (
           <BsSunFill
             className="text-white"
-            onClick={() => {
-              setPath(path);
-              changeDarkMode(!darkMode);
-            }}
+            onClick={() => changeDarkMode(!darkMode)}
           />
         ) : (
-          <BsFillMoonFill
-            onClick={() => {
-              setPath(path);
-              changeDarkMode(!darkMode);
-            }}
-          />
+          <BsFillMoonFill onClick={() => changeDarkMode(!darkMode)} />
         )}
       </button>
     </nav>

@@ -63,7 +63,10 @@ const About = () => {
             changeDarkMode={setDarkMode}
             path="about"
           />
-          <div className="flex justify-center items-start xs:items-center dark:text-white my-10 xs:flex-col-reverse">
+          <p className="text-3xl font-Lato mt-5 xs:mr-7 text-center">
+            About Me
+          </p>
+          <div className="flex justify-center items-start xs:items-center dark:text-white mt-5 mb-10 xs:flex-col-reverse">
             <div className="ml-10 mr-5 max-w-lg text-justify font-Poppins text-sm">
               <p className="mb-3 xs:mr-7">
                 Hello! My name is Miftahul Anwar and you can call me Miftah.

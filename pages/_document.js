@@ -9,7 +9,7 @@ export default function Document() {
         <meta name="description" content="Miftahul Anwar's personal site" />
         <link rel="icon" href="/favicon.ico" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@300&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@300&family=Roboto+Mono:wght@200&display=swap"
           rel="stylesheet"
         />
       </Head>

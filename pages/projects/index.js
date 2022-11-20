@@ -15,7 +15,7 @@ import Project from "../../components/Project";
 
 const About = () => {
   const [darkMode, setDarkMode] = useThemeContext();
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState();
 
   const techStack = ["QT C++", "Linux", "OpenCV", "Rest API"];
 
@@ -66,7 +66,7 @@ const About = () => {
     resizeW();
     window.addEventListener("resize", resizeW); // Update the width on resize
     return () => window.removeEventListener("resize", resizeW);
-  });
+  }, [isMobile]);
 
   useEffect(() => {
     {

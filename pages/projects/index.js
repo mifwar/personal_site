@@ -15,7 +15,7 @@ import Project from "../../components/Project";
 
 const About = () => {
   const [darkMode, setDarkMode] = useThemeContext();
-  const [isMobile, setIsMobile] = useState();
+  const [isMobile, setIsMobile] = useState(false);
 
   const techStack = ["QT C++", "Linux", "OpenCV", "Rest API"];
 

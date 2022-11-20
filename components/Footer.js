@@ -24,7 +24,7 @@ const Footer = () => {
         and
         {customLink("https://tailwindcss.com/", " Tailwind CSS")}
       </h4>
-      <h4 className="text-xs text-black dark:text-white font-Poppins py-1 mx-5">
+      <h4 className="text-xs text-black dark:text-white font-Poppins py-1 mx-5 mb-5">
         MIT License © 2022 Miftahul Anwar
       </h4>
     </div>

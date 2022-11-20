@@ -12,7 +12,7 @@ export const MobileMode = ({ children }) => {
     return () => window.removeEventListener("resize", resizeW);
   });
 
-  return <Context.Provider value={[mobileMode]}>{children}</Context.Provider>;
+  return <Context.Provider value={mobileMode}>{children}</Context.Provider>;
 };
 
 export const useMobileModeContext = () => {

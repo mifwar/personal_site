@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 
 import Social from "../../components/Social";
 import Footer from "../../components/Footer";
@@ -10,12 +10,13 @@ import nmea from "../../public/nmea.png";
 import descotin from "../../public/descotin.png";
 
 import { useThemeContext } from "../../utils/darkMode";
+import { useMobileModeContext } from "../../utils/mobileMode";
 import Navbar from "../../components/Navbar";
 import Project from "../../components/Project";
 
 const About = () => {
   const [darkMode, setDarkMode] = useThemeContext();
-  const [isMobile, setIsMobile] = useState();
+  const isMobile = useMobileModeContext();
 
   const techStack = ["QT C++", "Linux", "OpenCV", "Rest API"];
 
@@ -60,13 +61,6 @@ const About = () => {
       href: "https://drive.google.com/file/d/19DjfausyPM2st9Fx8QoadfFMDGY6DBFC/view",
     },
   ];
-
-  useEffect(() => {
-    const resizeW = () => setIsMobile(window.innerWidth <= 640);
-    resizeW();
-    window.addEventListener("resize", resizeW); // Update the width on resize
-    return () => window.removeEventListener("resize", resizeW);
-  }, [isMobile]);
 
   useEffect(() => {
     {

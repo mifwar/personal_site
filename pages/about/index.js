@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import about from "../../public/MiftahulAnwarAbout.jpeg";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 
 import { useThemeContext } from "../../utils/darkMode";
+import { useMobileModeContext } from "../../utils/mobileMode";
 import Navbar from "../../components/Navbar";
 import Social from "../../components/Social";
 import Footer from "../../components/Footer";
@@ -25,14 +26,7 @@ const customLink = (href, text) => (
 
 const About = () => {
   const [darkMode, setDarkMode] = useThemeContext();
-  const [isMobile, setIsMobile] = useState();
-
-  useEffect(() => {
-    const resizeW = () => setIsMobile(window.innerWidth <= 640);
-    resizeW();
-    window.addEventListener("resize", resizeW); // Update the width on resize
-    return () => window.removeEventListener("resize", resizeW);
-  });
+  const isMobile = useMobileModeContext();
 
   useEffect(() => {
     {

@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+
 import profile from "../public/MiftahulAnwarCropped.jpg";
 import React, { useEffect } from "react";
 
@@ -73,6 +75,14 @@ const Home = () => {
               </a>
             </h2>
           </div>
+          <Link
+            href="/resume.pdf"
+            className={"btn-resume ".concat(darkMode ? "dark" : "")}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            resume
+          </Link>
           <Social />
           <Footer />
         </section>

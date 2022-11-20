@@ -9,9 +9,13 @@ module.exports = {
     fontFamily: {
       Lato: ["Lato", "sans-serif"],
       Poppins: ["Poppins", "sans-serif"],
+      Mono: ["Roboto Mono", "sans-serif"],
     },
     extend: {
-      screens: { xs: { max: "640px" } },
+      screens: {
+        xs: { max: "640px" },
+        x2s: { max: "456px" },
+      },
     },
   },
 

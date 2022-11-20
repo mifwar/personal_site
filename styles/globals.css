@@ -24,7 +24,7 @@ a {
     color: #00000;
     border-radius: 0.5rem;
     font-size: 1rem; /* 14px */
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     line-height: 1.25rem; /* 20px */
     padding-top: 0.5rem /* 8px */;
     padding-bottom: 0.5rem /* 8px */;
@@ -88,7 +88,7 @@ a {
   }
 
   .nav-text {
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -153,5 +153,197 @@ a {
     display: flex;
     justify-content: start;
     align-items: center;
+  }
+
+  .project-container {
+    width: calc(100% - 100px);
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 1.5rem /* 40px */;
+    margin-bottom: 5.5rem /* 40px */;
+    justify-content: center;
+  }
+
+  .project-container.mobile {
+    flex-direction: row-reverse;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .project-container.left {
+    flex-direction: row;
+  }
+
+  .project-container.right {
+    flex-direction: row-reverse;
+  }
+
+  .project-title-container {
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+    margin-top: 0.75rem /* 12px */;
+    margin-bottom: 0.75rem /* 12px */;
+    font-family: Lato, sans-serif;
+  }
+
+  .project-title-container.left {
+    text-align: left;
+  }
+
+  .project-title-container.right {
+    text-align: right;
+  }
+
+  .project-title-container.center {
+    text-align: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .project-image-container {
+    width: 400px;
+    height: 250px;
+  }
+
+  .project-image-container.mobile {
+    width: 0px;
+  }
+
+  .project-image {
+    display: inline;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .project-image.mobile {
+    width: calc(100% - 100px);
+    position: absolute;
+    left: 50px;
+  }
+
+  .project-description-container {
+    width: 300px;
+    height: 250px;
+  }
+
+  .project-description-container.mobile {
+    width: 500px;
+    z-index: 2;
+    font-size: 1rem /* 16px */;
+    line-height: 1.5rem /* 24px */;
+  }
+
+  .project-description-container.tiny-mobile {
+    width: 500px;
+    z-index: 2;
+    font-size: 4vmin /* 12px */;
+    line-height: 4.15vmin /* 16px */;
+  }
+
+  .small {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-description-container.dark {
+    --tw-text-opacity: 1;
+    color: rgb(243 244 246 / var(--tw-text-opacity));
+  }
+
+  .project-description {
+    width: 120%;
+    padding: 0.75rem /* 12px */;
+    font-family: Poppins, sans-serif;
+    margin-top: 0.75rem /* 12px */;
+    margin-bottom: 0.75rem /* 12px */;
+    background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.9;
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+      0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+      0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .project-description.right {
+    text-align: right;
+    transform: translateX(-16%);
+  }
+
+  .project-description.left {
+    text-align: justify;
+    transform: translateX(0px);
+  }
+
+  .project-description.mobile {
+    max-width: 100%;
+    text-align: justify;
+    transform: translateX(0px);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    --tw-bg-opacity: 0;
+
+    --tw-shadow: 0 0px 0px -1px rgb(0 0 0 / 0.1);
+  }
+
+  .project-description.dark {
+    background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+  }
+
+  .tech-stack-container {
+    display: flex;
+    width: 400px;
+    font-family: Roboto Mono, sans-serif;
+  }
+
+  .tech-stack-container.right {
+    justify-content: flex-end;
+    transform: translateX(-23%);
+  }
+
+  .tech-stack-container.left {
+    justify-content: flex-start;
+  }
+
+  .tech-stack-container.mobile {
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .reference-container {
+    display: flex;
+    margin-top: 0.5rem /* 8px */;
+    margin-bottom: 0.5rem /* 8px */;
+  }
+
+  .reference-container.right {
+    justify-content: flex-end;
+  }
+
+  .reference-container.left {
+    justify-content: flex-start;
+    margin-left: 0.5rem;
+  }
+
+  .reference-container.mobile {
+    margin-left: 1rem;
+  }
+
+  .project-image-overlay {
+    background-color: rgba(191, 219, 254, 0.95);
+    z-index: 0;
+    width: calc(100% - 100px);
+    height: 250px;
+  }
+
+  .project-image-overlay.dark {
+    background-color: rgba(30, 58, 138, 0.95);
   }
 }

@@ -6,6 +6,14 @@ import Link from "next/link";
 
 const Sidebar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const links = [
+    { href: "/", path: "home", txt: "Home" },
+    { href: "/about", path: "about", txt: "About" },
+    { href: "/projects", path: "projects", txt: "Projects" },
+    // { href: "/achievements", path: "achievements", txt: "Achievements" },
+  ];
+
   const { isDark, path } = props;
 
   const changeSidebarStatus = () => {
@@ -39,70 +47,25 @@ const Sidebar = (props) => {
             />
           </div>
           <ul className="nav-menu-items">
-            <li>
-              <Link
-                href="/"
-                className={
-                  path === "home"
-                    ? isDark
-                      ? "nav-text dark-active"
-                      : "nav-text active"
-                    : isDark
-                    ? "nav-text dark"
-                    : "nav-text"
-                }
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/about"
-                className={
-                  path === "about"
-                    ? isDark
-                      ? "nav-text dark-active"
-                      : "nav-text active"
-                    : isDark
-                    ? "nav-text dark"
-                    : "nav-text"
-                }
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/projects"
-                className={
-                  path === "projects"
-                    ? isDark
-                      ? "nav-text dark-active"
-                      : "nav-text active"
-                    : isDark
-                    ? "nav-text dark"
-                    : "nav-text"
-                }
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/achievements"
-                className={
-                  path === "achievements"
-                    ? isDark
-                      ? "nav-text dark-active"
-                      : "nav-text active"
-                    : isDark
-                    ? "nav-text dark"
-                    : "nav-text"
-                }
-              >
-                Achievements
-              </Link>
-            </li>
+            {links.map((link, i) => (
+              <li>
+                <Link
+                  key={i}
+                  href={link.href}
+                  className={
+                    path === link.path
+                      ? isDark
+                        ? "nav-text dark-active"
+                        : "nav-text active"
+                      : isDark
+                      ? "nav-text dark"
+                      : "nav-text"
+                  }
+                >
+                  {link.txt}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
         <div className={isOpen ? "overlay active" : "overlay"}></div>

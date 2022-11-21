@@ -10,10 +10,10 @@ const Navbar = (props) => {
     "z-10 flex items-center max-w-4xl mx-auto -top-1 sticky backdrop-blur-sm bg-white/90 dark:bg-gray-900/90";
   const { isMobile, darkMode, changeDarkMode, path } = props;
   const links = [
-    { id: 1, href: "/", path: "home", txt: "Home" },
-    { id: 2, href: "/about", path: "about", txt: "About" },
-    { id: 3, href: "/projects", path: "projects", txt: "Projects" },
-    { id: 4, href: "/achievements", path: "achievements", txt: "Achievements" },
+    { href: "/", path: "home", txt: "Home" },
+    { href: "/about", path: "about", txt: "About" },
+    { href: "/projects", path: "projects", txt: "Projects" },
+    // { href: "/achievements", path: "achievements", txt: "Achievements" },
   ];
   return (
     <nav className={isMobile ? navStyle : navStyleBlur}>
@@ -21,9 +21,9 @@ const Navbar = (props) => {
         <Sidebar isDark={darkMode} path={path} />
       ) : (
         <div className="xs:hidden ml-auto pl-10">
-          {links.map((link) => (
+          {links.map((link, i) => (
             <Link
-              key={link.id}
+              key={i}
               href={link.href}
               className={
                 path === link.path
@@ -44,10 +44,14 @@ const Navbar = (props) => {
         {darkMode ? (
           <BsSunFill
             className="text-white"
+            aria-label="toggle dark mode"
             onClick={() => changeDarkMode(!darkMode)}
           />
         ) : (
-          <BsFillMoonFill onClick={() => changeDarkMode(!darkMode)} />
+          <BsFillMoonFill
+            aria-label="toggle dark mode"
+            onClick={() => changeDarkMode(!darkMode)}
+          />
         )}
       </button>
     </nav>

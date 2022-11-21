@@ -48,9 +48,8 @@ const Sidebar = (props) => {
           </div>
           <ul className="nav-menu-items">
             {links.map((link, i) => (
-              <li>
+              <li key={i}>
                 <Link
-                  key={i}
                   href={link.href}
                   className={
                     path === link.path

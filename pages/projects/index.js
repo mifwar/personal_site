@@ -81,7 +81,7 @@ const About = () => {
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
-        <title>Miftahul Anwar</title>
+        <title>Projects</title>
         <meta name="description" content="Miftahul Anwar's personal site" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

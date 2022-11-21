@@ -57,7 +57,7 @@ const About = () => {
             changeDarkMode={setDarkMode}
             path="about"
           />
-          <p className="text-3xl font-Lato mt-5 xs:mr-7 text-center">
+          <p className="text-3xl font-Lato mt-5 xs:mr-7 text-center dark:text-gray-100">
             About Me
           </p>
           <div className="flex justify-center items-start xs:items-center dark:text-white mt-5 mb-10 xs:flex-col-reverse">

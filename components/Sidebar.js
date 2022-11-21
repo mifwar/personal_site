@@ -67,7 +67,10 @@ const Sidebar = (props) => {
             ))}
           </ul>
         </nav>
-        <div className={isOpen ? "overlay active" : "overlay"}></div>
+        <button
+          onClick={changeSidebarStatus}
+          className={isOpen ? "overlay active" : "overlay"}
+        ></button>
       </div>
     </>
   );

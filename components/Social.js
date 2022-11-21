@@ -11,24 +11,49 @@ const Social = () => {
   const socialClass =
     "px-3 text-black dark:text-white hover:text-blue-500 dark:hover:text-blue-400";
   const socials = [
-    { i: 1, h: "mailto:hello@mifwar.com", c: <FaEnvelope /> },
-    { i: 2, h: "https://github.com/mifwar", c: <FaGithub /> },
-    { i: 3, h: "https://hackerrank.com/2210171043_mif", c: <FaHackerrank /> },
-    { i: 4, h: "https://linkedin.com/in/miftahulanwar/", c: <FaLinkedin /> },
-    { i: 5, h: "https://twitter.com/mif_war", c: <FaTwitter /> },
-    { i: 6, h: "https://instagram.com/mif.war", c: <FaInstagram /> },
+    {
+      href: "mailto:hello@mifwar.com",
+      component: <FaEnvelope />,
+      aria: "email",
+    },
+    {
+      href: "https://github.com/mifwar",
+      component: <FaGithub />,
+      aria: "github",
+    },
+    {
+      href: "https://hackerrank.com/2210171043_mif",
+      component: <FaHackerrank />,
+      aria: "hackerrank",
+    },
+    {
+      href: "https://linkedin.com/in/miftahulanwar/",
+      component: <FaLinkedin />,
+      aria: "linkedin",
+    },
+    {
+      href: "https://twitter.com/mif_war",
+      component: <FaTwitter />,
+      aria: "twitter",
+    },
+    {
+      href: "https://instagram.com/mif.war",
+      component: <FaInstagram />,
+      aria: "instagram",
+    },
   ];
   return (
     <div className="text-lg flex justify-center mx-auto mt-10">
-      {socials.map((social) => (
+      {socials.map((social, i) => (
         <a
-          key={social.i}
+          key={i}
+          aria-label={social.aria}
           className={socialClass}
-          href={social.h}
+          href={social.href}
           target="_blank"
           rel="noopener noreferrer"
         >
-          {social.c}
+          {social.component}
         </a>
       ))}
     </div>

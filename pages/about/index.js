@@ -95,8 +95,9 @@ const About = () => {
                 While at EROS, i created and involved in some projects. My first
                 project is creating an app that able to wirelessly track the
                 robot states while robot in the field. I also involved to
-                develop a decision making algorithm, an object detection system
-                using computer vision, and a teamwork algorithm.
+                develop an object detection system using computer vision and
+                some algorithm such as decision making, teamwork, and
+                localization.
               </p>
               <p className="my-3 xs:mr-7">
                 In my last year at college, i became a freelance software

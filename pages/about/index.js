@@ -66,7 +66,7 @@ const About = () => {
                 Hello! My name is Miftahul Anwar and you can call me Miftah.
               </p>
               <p className="my-3 xs:mr-7">
-                My programming journey is started when i became a Computer
+                My programming journey began when I enrolled as a Computer
                 Engineering student at
                 {customLink(
                   "https://www.pens.ac.id/",
@@ -75,11 +75,11 @@ const About = () => {
                 .
               </p>
               <p className="my-3 xs:mr-7">
-                During my college life, i spent my first 3 years in
+                During college, I spent my first three years in
                 {customLink("https://erosrobotic.id/", " EROS ")} as a
                 programmer. EROS is a Humanoid Robot Soccer Team under the
-                management of PENS Robotics Team. EROS is developed to compete
-                in Humanoid Robot Soccer League in
+                management of the PENS Robotics Team. EROS was developed to
+                compete in the Humanoid Robot Soccer League at
                 {customLink(
                   "https://kontesrobotindonesia.id",
                   " Kontes Robot Indonesia "
@@ -92,23 +92,23 @@ const About = () => {
                 .
               </p>
               <p className="my-3 xs:mr-7">
-                While at EROS, i created and involved in some projects. My first
-                project is creating an app that able to wirelessly track the
-                robot states while robot in the field. I also involved to
-                develop an object detection system using computer vision and
-                some algorithm such as decision making, teamwork, and
-                localization.
+                While at EROS, I created and participated in several projects.
+                My first project involved developing an app that could
+                wirelessly track the robot's states while it was on the field. I
+                also contributed to the development of an object detection
+                system using computer vision, along with other algorithms, such
+                as decision-making, teamwork, and localization.
               </p>
               <p className="my-3 xs:mr-7">
-                In my last year at college, i became a freelance software
-                engineer and handled some projects that mostly about Desktop
-                App, Computer Vision, and IoT.
+                In my last year of college, I worked as a freelance software
+                engineer and managed various projects, primarily focused on
+                Desktop Apps, Computer Vision, and IoT.
               </p>
               <p className="my-3 xs:mr-7">
                 Fast forward to today, I am currently working for
                 {customLink("https://www.zenius.net/", " Zenius Education ")}
-                as a Software Engineer. I contributed to the app development
-                using Next.js and NestJS.
+                as a Software Engineer. I have contributed to the app
+                development using Next.js and NestJS.
               </p>
             </div>
             <Image

@@ -57,14 +57,14 @@ const Home = () => {
             <h2 className="text-md font-burtons dark:text-white font-Poppins py-1">
               Currently working as a{" "}
               <a
-                className="text-green-600 dark:text-green-400"
+                className="text-blue-600 dark:text-blue-400"
                 href="https://clojure.org/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Clojure
+                Software Engineer
               </a>{" "}
-              Dev at{" "}
+              at{" "}
               <a
                 className="text-purple-600 dark:text-purple-400"
                 href="https://zenius.net"

@@ -107,8 +107,8 @@ const About = () => {
               <p className="my-3 xs:mr-7">
                 Fast forward to today, I am currently working for
                 {customLink("https://www.zenius.net/", " Zenius Education ")}
-                as a Clojure Developer. I created a Clojure app to speed up the
-                tutor in Zenius to create a school exercise problems.
+                as a Software Engineer. I contributed to the app development
+                using Next.js and NestJS.
               </p>
             </div>
             <Image

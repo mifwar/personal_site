@@ -94,10 +94,10 @@ const About = () => {
               <p className="my-3 xs:mr-7">
                 While at EROS, I created and participated in several projects.
                 My first project involved developing an app that could
-                wirelessly track the robot's states while it was on the field. I
-                also contributed to the development of an object detection
-                system using computer vision, along with other algorithms, such
-                as decision-making, teamwork, and localization.
+                wirelessly track the robot&apos;s states while it was on the
+                field. I also contributed to the development of an object
+                detection system using computer vision, along with other
+                algorithms, such as decision-making, teamwork, and localization.
               </p>
               <p className="my-3 xs:mr-7">
                 In my last year of college, I worked as a freelance software

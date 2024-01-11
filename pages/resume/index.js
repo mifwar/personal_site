@@ -1,4 +1,4 @@
-const ResumeDua = () => {
+const Resume = () => {
   return (
     <div className="flex flex-col h-screen">
       <iframe
@@ -9,4 +9,4 @@ const ResumeDua = () => {
   );
 };
 
-export default ResumeDua;
+export default Resume;

@@ -76,7 +76,7 @@ const Home = () => {
             </h2>
           </div>
           <Link
-            href="/resume.pdf"
+            href="/resume"
             className={"btn-resume ".concat(darkMode ? "dark" : "")}
             target="_blank"
             rel="noopener noreferrer"
